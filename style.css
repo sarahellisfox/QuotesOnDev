@@ -298,6 +298,9 @@ big {
   font-size: 1.25rem;
   line-height: 1.6; }
 
+span {
+  color: #FFF; }
+
 .source {
   font-style: italic; }
 

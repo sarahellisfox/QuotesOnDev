@@ -13,6 +13,10 @@
             $('#entryContent').html(newQuote.excerpt.rendered);
             $('#entryMeta').html(newQuote.title.rendered);
 
+            if(newQuote._qod_quote_source_url && newQuote._qod_quote_source) {
+                $('#entryMeta').append(`<a href=" ${newQuote._qod_quote_source_url}"><span> , </span>${newQuote._qod_quote_source}</a>`);
+            }else(newQuote)
+
         }).fail(function(error){
             console.log("an error occurred", error);
     });
