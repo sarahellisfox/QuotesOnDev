@@ -11,7 +11,7 @@ body {
 	padding: 2.5%;
 }
 
-.type-page {
+.type-page, .browse-archives {
 	.entry-header {
 		margin-top: 3em;
 	};
@@ -58,3 +58,14 @@ body {
 .source, .entry-title {
 	display: inline;
 }
+
+// Acrchive Page 
+
+.post-archives, .category-archives, .tag-archives {
+	li {
+		display: inline-flex; 
+		flex-wrap: wrap;
+		margin-right: 1.125rem;
+		margin-bottom: .5rem;
+		} 
+	}

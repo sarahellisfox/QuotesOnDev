@@ -218,6 +218,10 @@ td,
 th {
   padding: 0; }
 
+ul {
+  margin-left: 0;
+  padding-left: 0; }
+
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
@@ -296,6 +300,10 @@ big {
 
 .source {
   font-style: italic; }
+
+/* Archive */
+.page-template-default a {
+  font-weight: lighter; }
 
 /* Footer */
 .site-footer {
@@ -524,7 +532,7 @@ body {
 .hfeed {
   padding: 2.5%; }
 
-.type-page .entry-header {
+.type-page .entry-header, .browse-archives .entry-header {
   margin-top: 3em; }
 
 .sticky {
@@ -560,6 +568,15 @@ body {
 
 .source, .entry-title {
   display: inline; }
+
+.post-archives li, .category-archives li, .tag-archives li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: 1.125rem;
+  margin-bottom: .5rem; }
 
 /*--------------------------------------------------------------
 # Media
