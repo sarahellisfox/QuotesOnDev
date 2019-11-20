@@ -20,12 +20,17 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: $font__main;
 }
 
+h1 {
+	font-weight: bold;
+}
+
 /* Copy */
 
 p {
 	margin-bottom: $base__space-unit;
 	font-family: $font__main; 
 	font-size: 1em; 
+	font-weight: lighter;
 }
 
 dfn, cite, em, i {
@@ -78,10 +83,14 @@ big {
 	font-size: 1.25em; 
 }
 
-.entry-title {
-	font-weight: lighter; 
-	font-size: 1.25rem;
-	line-height: $font__line-height-pre;
+.home {
+
+	.entry-title {
+		font-weight: lighter; 
+		font-size: 1.25rem;
+		line-height: $font__line-height-pre;
+	}
+
 }
 
 .source {

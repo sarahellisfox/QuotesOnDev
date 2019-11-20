@@ -239,11 +239,15 @@ h1, h2, h3, h4, h5, h6 {
   clear: both;
   font-family: "Exo", sans-serif; }
 
+h1 {
+  font-weight: bold; }
+
 /* Copy */
 p {
   margin-bottom: 1.5rem;
   font-family: "Exo", sans-serif;
-  font-size: 1em; }
+  font-size: 1em;
+  font-weight: lighter; }
 
 dfn, cite, em, i {
   font-style: italic; }
@@ -285,7 +289,7 @@ big {
   line-height: 1.6;
   font-size: 1.25em; }
 
-.entry-title {
+.home .entry-title {
   font-weight: lighter;
   font-size: 1.25rem;
   line-height: 1.6; }
@@ -519,6 +523,9 @@ body {
 /* Posts and pages */
 .hfeed {
   padding: 2.5%; }
+
+.type-page .entry-header {
+  margin-top: 3em; }
 
 .sticky {
   display: block; }

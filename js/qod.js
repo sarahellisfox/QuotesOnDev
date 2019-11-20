@@ -1,6 +1,8 @@
+// Quote Button 
 (function($){
 
     $('#newQuoteButton').on('click', function(event) {
+        event.preventDefault();
 
         $.ajax({
             method: 'GET',
@@ -17,8 +19,7 @@
     }); 
 })(jQuery);
 
-    // add a click event for the "Show Me Another" btn and then run the AJAX code below
-    // 1: get request to grab random post and append to the DOM
-    // append the quote to the DOM
-    // 2: post a new quote using the post method
-    // using a form to submit a quote so a .submit event
+// Submit Form 
+
+
+// .submit event
