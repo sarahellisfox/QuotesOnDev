@@ -21,7 +21,7 @@ get_header(); ?>
                   <form name="quoteForm" id="quote-submission-form">
                      <div>
                         <label for="quote-author">Author of Quote</label>
-                        <input type="text" name="quote_author" id="quote-author" required aria-required="true">
+                        <input type="text" name="quote_author" class="quote-author" id="quoteAuthor" required aria-required="true">
                      </div>
                      <div>
                         <label for="quote-content">Quote</label>
@@ -29,14 +29,14 @@ get_header(); ?>
                      </div>
                      <div>
                         <label for="quote-source">Where did you find this quote? (e.g. book name)</label>
-                        <input type="text" name="quote_source" id="quote-source">
+                        <input type="text" name="quote_source" class="quote-source" id="quoteSource">
                      </div>
                      <div>
                         <label for="quote-source-url">Provide the the URL of the quote source, if available.</label>
-                        <input type="url" name="quote_source_url" id="quote-source-url">
+                        <input type="url" name="quote_source_url" class="quote-source-url" id="quoteSourceUrl">
                      </div>
 
-                     <input type="submit" value="Submit Quote">
+                     <input class="submit-button" type="submit" value="Submit Quote">
                   </form>
 
                   <p class="submit-success-message" style="display:none;"></p>

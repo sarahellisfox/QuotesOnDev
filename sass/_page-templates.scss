@@ -4,4 +4,38 @@
 
 /* All Archives Page */
 
+.post-archives, .category-archives, .tag-archives {
+	li {
+		display: inline-flex; 
+		flex-wrap: wrap;
+		margin-right: 1.125rem;
+		margin-bottom: .5rem;
+		} 
+	}
+
 /* Submit a Quote Page */
+
+.quote-submission-wrapper {
+   max-width: 1080px; 
+   
+   form, div {
+		display: flex; 
+		flex-direction: column;
+   }
+
+   .quote-author, .quote-source, .quote-source-url {
+	   width: 60%; 
+   }
+
+   h1, label {
+	margin: .67em 0;
+   }
+
+   .submit-button {
+		margin-top: 1.5em;
+
+   }
+   
+}
+
+   

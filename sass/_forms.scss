@@ -17,12 +17,12 @@ input[type="submit"] {
 	padding: .75rem 2.25rem;	
 
 	&:hover {
-		border-color: #0c0;
+		border: 2px solid #0c0;
 	}
 
 	&:active,
 	&:focus {
-		border-color:#0c0;
+		border: 2px solid #0c0;
 	}
 }
 
@@ -34,12 +34,11 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-	color: #666;
-	border: 1px solid #ccc;
-	border-radius: 3px;
+	background-color: #222;
+	border: 2px solid #0c0;
 
 	&:focus {
-		color: #111;
+		color: #0c0;
 	}
 }
 
