@@ -17,12 +17,15 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
+	font-family: $font__main;
 }
 
 /* Copy */
 
 p {
 	margin-bottom: $base__space-unit;
+	font-family: $font__main; 
+	font-size: 1em; 
 }
 
 dfn, cite, em, i {
@@ -65,4 +68,29 @@ mark, ins {
 
 big {
 	font-size: 125%;
+}
+
+/* Quote Display */ 
+
+.post {
+	font-weight: lighter; 
+	line-height: $font__line-height-pre;
+	font-size: 1.25em; 
+}
+
+.entry-title {
+	font-weight: lighter; 
+	font-size: 1.25rem;
+	line-height: $font__line-height-pre;
+}
+
+.source {
+	font-style: italic;
+}
+
+/* Footer */
+
+.site-footer {
+	font-size: 1em; 
+	font-weight: lighter;
 }

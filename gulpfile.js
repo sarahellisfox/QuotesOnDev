@@ -64,7 +64,7 @@ gulp.task('browser-sync', function() {
   ];
 
   browserSync.init(files, {
-    proxy: 'localhost[:8888]/[05-Fox-QOD]'
+    proxy: 'localhost:8888/05-Fox-QOD/QOD'
   });
 
   gulp.watch(files).on('change', browserSync.reload);

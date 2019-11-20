@@ -229,18 +229,21 @@ button,
 input,
 select,
 textarea {
-  color: #404040;
-  font-family: sans-serif;
+  color: #fff;
+  font-family: "Exo", sans-serif;
   font-size: 1rem;
   line-height: 1.5; }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  clear: both; }
+  clear: both;
+  font-family: "Exo", sans-serif; }
 
 /* Copy */
 p {
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem;
+  font-family: "Exo", sans-serif;
+  font-size: 1em; }
 
 dfn, cite, em, i {
   font-style: italic; }
@@ -253,7 +256,7 @@ address {
 
 pre {
   background: #eee;
-  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-family: "Exo", sans-serif;
   font-size: .9375rem;
   line-height: 1.6;
   margin-bottom: 1.6rem;
@@ -262,7 +265,7 @@ pre {
   padding: 1.6rem; }
 
 code, kbd, tt, var {
-  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font-family: "Exo", sans-serif;
   font-size: .9375rem; }
 
 abbr, acronym {
@@ -275,6 +278,25 @@ mark, ins {
 
 big {
   font-size: 125%; }
+
+/* Quote Display */
+.post {
+  font-weight: lighter;
+  line-height: 1.6;
+  font-size: 1.25em; }
+
+.entry-title {
+  font-weight: lighter;
+  font-size: 1.25rem;
+  line-height: 1.6; }
+
+.source {
+  font-style: italic; }
+
+/* Footer */
+.site-footer {
+  font-size: 1em;
+  font-weight: lighter; }
 
 /*--------------------------------------------------------------
 # Elements
@@ -292,7 +314,7 @@ html {
           box-sizing: inherit; }
 
 body {
-  background: #fff;
+  background: #222;
   /* Fallback for when there is no custom background color defined. */ }
 
 blockquote,
@@ -308,10 +330,6 @@ hr {
   border: 0;
   height: 1px;
   margin-bottom: 1.5rem; }
-
-ul,
-ol {
-  margin: 0 0 1.5rem 3rem; }
 
 ul {
   list-style: disc; }
@@ -348,24 +366,18 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  border: 1px solid;
-  border-color: #ccc #ccc #bbb;
+  background-color: #222;
+  border: 2px solid #0c0;
   border-radius: 3px;
-  background: #e6e6e6;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.8);
-  font-size: .75rem;
-  line-height: 1;
-  padding: .6rem 1rem .4rem;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
+  color: #0c0;
+  font-size: 1em;
+  font-weight: 700;
+  padding: .75rem 2.25rem; }
   button:hover,
   input[type="button"]:hover,
   input[type="reset"]:hover,
   input[type="submit"]:hover {
-    border-color: #ccc #bbb #aaa;
-    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
-            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
+    border-color: #0c0; }
   button:active, button:focus,
   input[type="button"]:active,
   input[type="button"]:focus,
@@ -373,9 +385,7 @@ input[type="submit"] {
   input[type="reset"]:focus,
   input[type="submit"]:active,
   input[type="submit"]:focus {
-    border-color: #aaa #bbb #bbb;
-    -webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
-            box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
+    border-color: #0c0; }
 
 /* Fields */
 input[type="text"],
@@ -411,9 +421,10 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: #0c0;
+  text-decoration: none; }
   a:visited {
-    color: purple; }
+    color: #0c0; }
   a:hover, a:focus, a:active {
     color: midnightblue; }
   a:focus {
@@ -422,71 +433,21 @@ a {
     outline: 0; }
 
 /* Menus */
-.main-navigation {
-  clear: both;
-  display: block;
-  float: left;
-  width: 100%; }
-  .main-navigation ul {
-    display: none;
-    list-style: none;
-    margin: 0;
-    padding-left: 0; }
-    .main-navigation ul ul {
-      -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-              box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      float: left;
-      position: absolute;
-      top: 1.5rem;
-      left: -999rem;
-      z-index: 99999; }
-      .main-navigation ul ul ul {
-        left: -999rem;
-        top: 0; }
-      .main-navigation ul ul li:hover > ul,
-      .main-navigation ul ul li.focus > ul {
-        left: 100%; }
-      .main-navigation ul ul a {
-        width: 200px; }
-    .main-navigation ul li:hover > ul,
-    .main-navigation ul li.focus > ul {
-      left: auto; }
-  .main-navigation li {
-    float: left;
-    position: relative; }
-  .main-navigation a {
-    display: block;
-    text-decoration: none; }
-
-/* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-  display: block; }
-
-@media screen and (min-width: 768px) {
-  .menu-toggle {
-    display: none; }
-  .main-navigation ul {
-    display: block; } }
-
-.site-main .comment-navigation, .site-main
-.posts-navigation, .site-main
-.post-navigation {
-  margin: 0 0 1.5rem;
-  overflow: hidden; }
-
-.comment-navigation .nav-previous,
-.posts-navigation .nav-previous,
-.post-navigation .nav-previous {
-  float: left;
-  width: 50%; }
-
-.comment-navigation .nav-next,
-.posts-navigation .nav-next,
-.post-navigation .nav-next {
-  float: right;
-  text-align: right;
-  width: 50%; }
+.site-footer {
+  width: 100%;
+  margin: 4.5rem 0 3rem; }
+  .site-footer .menu {
+    width: inherit;
+    list-style-type: none; }
+    .site-footer .menu ul {
+      padding: 0; }
+    .site-footer .menu li {
+      display: inline; }
+      .site-footer .menu li:not(:last-child):after {
+        content: '|';
+        padding: 0 1rem; }
+      .site-footer .menu li .link:last-child:after {
+        content: ''; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -548,6 +509,10 @@ a {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+body {
+  background-color: #222222;
+  padding: 2.5%; }
+
 /* Posts and pages */
 .sticky {
   display: block; }
@@ -570,6 +535,18 @@ a {
 .page-links {
   clear: both;
   margin: 0 0 1.5rem; }
+
+.logo {
+  background-image: url(../../assets/qod-logo.svg);
+  background-size: 300px;
+  height: 50px;
+  background-repeat: no-repeat; }
+
+.post {
+  margin-bottom: 2em; }
+
+.source, .entry-title {
+  display: inline; }
 
 /*--------------------------------------------------------------
 # Media
