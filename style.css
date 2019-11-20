@@ -298,6 +298,10 @@ big {
   font-size: 1em;
   font-weight: lighter; }
 
+/* Font Awesome */
+.fas {
+  display: none; }
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -510,10 +514,12 @@ a {
 # Content
 --------------------------------------------------------------*/
 body {
-  background-color: #222222;
-  padding: 2.5%; }
+  background-color: #222222; }
 
 /* Posts and pages */
+.hfeed {
+  padding: 2.5%; }
+
 .sticky {
   display: block; }
 
