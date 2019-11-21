@@ -18,7 +18,7 @@ get_header(); ?>
             <?php if ( is_user_logged_in() && current_user_can( 'edit_posts' ) ) : ?>
 
                <div class="quote-submission-wrapper">
-                  <form name="quoteForm" id="quote-submission-form">
+                  <form name="quoteForm" id="quoteSubmissionForm">
                      <div>
                         <label for="quote-author">Author of Quote</label>
                         <input type="text" name="quote_author" class="quote-author" id="quoteAuthor" required aria-required="true">
@@ -36,7 +36,7 @@ get_header(); ?>
                         <input type="url" name="quote_source_url" class="quote-source-url" id="quoteSourceUrl">
                      </div>
 
-                     <input class="submit-button" type="submit" value="Submit Quote">
+                     <input id="submitButton" class="submit-button" type="submit" value="Submit Quote">
                   </form>
 
                   <p class="submit-success-message" style="display:none;"></p>

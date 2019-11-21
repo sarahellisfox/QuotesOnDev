@@ -1,6 +1,13 @@
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+/* About Page */ 
+
+@include tablet {
+	entry-header {
+		font-size: 2em;
+	}
+}
 
 /* All Archives Page */
 
@@ -33,8 +40,11 @@
 
    .submit-button {
 		margin-top: 1.5em;
+
+		@include tablet {
+			width: 25%; 
+		}
    }
-   
 }
 
    

@@ -51,6 +51,16 @@ a {
 			}
 		}
 	}
+
+	@include tablet {
+		display: flex;
+		flex-direction: row; 
+
+		p {
+			width: 50%;
+			padding-left: 1rem;
+		}
+	}
 }
 
 

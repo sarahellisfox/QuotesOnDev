@@ -9,7 +9,6 @@ select,
 textarea {
 	color: $color__text-main;
 	font-family: $font__main;
-	font-size: 1rem;
 	line-height: $font__line-height-body;
 }
 
@@ -22,6 +21,14 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
 	font-weight: bold;
+	font-size: 1.5em;
+	font-weight: bolder;
+	line-height: $font__line-height-pre;
+
+
+		@include tablet {
+			font-size: 2em;
+		}
 }
 
 /* Copy */
@@ -31,6 +38,10 @@ p {
 	font-family: $font__main; 
 	font-size: 1em; 
 	font-weight: lighter;
+
+	@include tablet {
+		font-size: 1.75rem;
+	}
 }
 
 dfn, cite, em, i {
@@ -75,7 +86,7 @@ big {
 	font-size: 125%;
 }
 
-/* Quote Display */ 
+/* Front Page */ 
 
 .post {
 	font-weight: lighter; 
@@ -83,14 +94,37 @@ big {
 	font-size: 1.25em; 
 }
 
-.home {
+.entry-content {
+	@include tablet {
+		p {
+			font-size: 1.75em;
+		}
+	}
+}
 
-	.entry-title {
-		font-weight: lighter; 
-		font-size: 1.25rem;
-		line-height: $font__line-height-pre;
+.entry-header {
+	a {
+		@include tablet {
+			font-size: 1em;
+		}
+	}
+}
+
+.entry-meta {
+	a {
+		font-style: italic;
 	}
 
+	@include tablet {
+		
+		h2, .source {
+			font-size: 1.25em;
+			font-weight: lighter;
+		}
+	a {
+		font-size: 1em;
+	}
+	}
 }
 
 span {
@@ -101,19 +135,89 @@ span {
 	font-style: italic;
 }
 
-/* Archive */ 
+@include tablet {
 
-.page-template-default {
-	a {
-		font-weight: lighter;
+	.new-quote-button {
+		font-size: 1.25em;	
 	}
 }
+
+/* About */ 
+
+.page-id-209 {
+	@include tablet {
+		p {
+			font-size: 1em;
+		}
+	}
+}
+
+/* Archive */ 
+
+.page-id-207 {
+	a {
+		font-weight: lighter;
+
+		@include tablet {
+			font-size: 1.25em;
+		}
+	}
+}
+
+.quote-submission {
+	@include tablet {
+		p, a {
+			font-size: 1em;
+		}
+	}
+}
+
+.tag-cloud-link {
+	@include tablet {
+	font-size: 1.25rem!important;
+	} 
+}
+
+/* Submit Page */ 
+.page-id-205 {
+
+	label {
+		font-weight: lighter;
+	}
+
+	input {
+		text-align: left;
+		margin-left: 0;
+	}
+
+	.submit-button {
+		width: 40%; 
+		text-align: center;
+		padding: 0.5em 1em;
+
+		@include tablet {
+			font-size: 1.25em;
+		}
+
+		}
+	}
 
 /* Footer */
 
 .site-footer {
 	font-size: 1em; 
 	font-weight: lighter;
+
+	@include tablet {
+		
+		p {
+			font-size: 1em;
+		}
+
+		a {
+			font-size: 1em;
+		}
+	}
 }
 
 /* Font Awesome */ 
