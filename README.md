@@ -11,11 +11,11 @@ The Quotes on Dev Theme used Wordpress as a CMS, as well as PHP, jQuery, CSS and
 This project was such a relief after working on Inhabitent, and I found that I was able to work with Wordpress templates and the structure, and SASS variables and mixins a lot more easily. I also really enjoyed the JavaScript compontant -- it was a challenge, but very rewarding when I finally figured it out. 
  
 ## Screenshots
-![alt text](themes/qod/qod-home.png)
+![alt text](qod-home.png)
 
-![alt text](themes/qod/qod-archive-categories.png)
+![alt text](qod-archive-categories.png)
  
-![alt text](themes/qod/qod-page-submit.png)
+![alt text](/qod-page-submit.png)
 
 ### Installation
 
