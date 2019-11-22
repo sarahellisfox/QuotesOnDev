@@ -9,6 +9,7 @@
 	@include desktop {
 
 		display: block;
+		position: relative; 
 
 		&:before, &:after {
 			position: absolute;
@@ -21,14 +22,14 @@
 
 		&:before {
 			content: "\f10d";
-			left: 15%;
-			top: 35%;
+			top: 0; 
+			left: -175px;
 		}
 
 		&:after {
 			content: "\f10e";
-			right: 15%;
-			top: 35%;
+			top: 0;
+			right: -175px;
 		}
 	}
 }

@@ -745,7 +745,8 @@ object {
 /* Front Page */
 @media (min-width: 1080px) {
   .site-content {
-    display: block; }
+    display: block;
+    position: relative; }
     .site-content:before, .site-content:after {
       position: absolute;
       color: #0c0;
@@ -755,12 +756,12 @@ object {
       line-height: 1; }
     .site-content:before {
       content: "\f10d";
-      left: 15%;
-      top: 35%; }
+      top: 0;
+      left: -175px; }
     .site-content:after {
       content: "\f10e";
-      right: 15%;
-      top: 35%; } }
+      top: 0;
+      right: -175px; } }
 
 /* About Page */
 @media (min-width: 620px) {
