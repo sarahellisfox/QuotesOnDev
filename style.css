@@ -388,8 +388,12 @@ span {
       font-size: 1em; } }
 
 /* Font Awesome */
-.fas {
-  display: none; }
+/* 404 Page */
+.error404 p {
+  font-size: 1em; }
+
+.error404 .fas {
+  font-size: 1.5em; }
 
 /*--------------------------------------------------------------
 # Elements
@@ -525,6 +529,20 @@ textarea {
   padding-left: 3px;
   width: 100%; }
 
+/* Error 404 Page */
+.error404 .search-submit, .error404 fieldset {
+  border: 0; }
+
+.error404 .search-submit {
+  padding-left: 0.5em; }
+
+.error404 .search-field {
+  min-width: 200px;
+  padding: 0.75em 1em; }
+
+.error404 .page-title {
+  padding-top: 1em; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -535,7 +553,7 @@ a {
   a:visited {
     color: #0c0; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #009900; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -686,6 +704,10 @@ body {
   background-size: 300px;
   height: 50px;
   background-repeat: no-repeat; }
+  @media (min-width: 620px) {
+    .site-header .logo {
+      background-size: 500px;
+      height: 75px; } }
   @media (min-width: 1080px) {
     .site-header .logo {
       background-size: 700px;
@@ -778,10 +800,3 @@ object {
     @media (min-width: 620px) {
       .quote-submission-wrapper .submit-button {
         width: 25%; } }
-
-/* Error 404 Page */
-.error404 p {
-  font-size: 1em; }
-
-.error404 .fa-search:before {
-  content: "\f002"; }

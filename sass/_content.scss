@@ -73,6 +73,11 @@ body {
 	height: 50px; 
 	background-repeat: no-repeat;
 
+	@include tablet {
+		background-size: 500px;
+		height: 75px;
+	}
+
 	@include desktop {
 		background-size: 700px;
 		width: 700px;

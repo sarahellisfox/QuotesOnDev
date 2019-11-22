@@ -246,6 +246,18 @@ span {
 
 /* Font Awesome */ 
 
-.fas {
-	display: none;
+// .fas {
+// 	display: none;
+// }
+
+/* 404 Page */ 
+
+.error404 {
+	p {
+		font-size: 1em;
+	}
+
+	.fas {
+		font-size: 1.5em;
+	}
 }

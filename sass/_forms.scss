@@ -74,3 +74,24 @@ textarea {
 	padding-left: 3px;
 	width: 100%;
 }
+
+/* Error 404 Page */ 
+.error404 {
+	.search-submit, fieldset {
+		border: 0;
+	}
+
+	.search-submit {
+		padding-left: 0.5em;		
+	};
+
+	.search-field {
+		min-width: 200px;
+		padding: 0.75em 1em;
+	}
+
+	.page-title {
+		padding-top: 1em;
+	}
+}
+   
