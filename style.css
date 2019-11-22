@@ -712,12 +712,12 @@ body {
       line-height: 1; }
     .site-content:before {
       content: "\f10d";
-      left: 22%;
-      top: 28%; }
+      left: 15%;
+      top: 35%; }
     .site-content:after {
       content: "\f10e";
-      right: 22%;
-      top: 28%; } }
+      right: 15%;
+      top: 35%; } }
 
 /*--------------------------------------------------------------
 # Media
@@ -778,3 +778,10 @@ object {
     @media (min-width: 620px) {
       .quote-submission-wrapper .submit-button {
         width: 25%; } }
+
+/* Error 404 Page */
+.error404 p {
+  font-size: 1em; }
+
+.error404 .fa-search:before {
+  content: "\f002"; }

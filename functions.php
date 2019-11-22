@@ -70,13 +70,12 @@ function qod_scripts() {
 
 	// localized js
 	wp_localize_script('qod-script', 'qod_vars', array(
-		'home_url' => esc_url_raw(home_url()),
+		'home_url' => home_url(),
 		'rest_url' => esc_url_raw(rest_url() ),
 		'post_id' => get_the_ID(),
         'wpapi_nonce' => wp_create_nonce('wp_rest'),
     ));
 }
-
 add_action( 'wp_enqueue_scripts', 'qod_scripts' );
 
 /**

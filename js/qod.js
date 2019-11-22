@@ -1,14 +1,22 @@
-// Quote Button 
+
 (function ($) {
+
+    // Quote Button
+
+    let lastPage = '';
 
     $('#newQuoteButton').on('click', function (event) {
         event.preventDefault();
 
+        lastPage = document.URL;
+
         $.ajax({
-            method: 'GET',
+            method: 'get',
             url: qod_vars.rest_url + '/wp/v2/posts?filter[orderby]=rand&filter[posts_per_page]=1',
         }).done(function (data) {
-            let newQuote = data[0];
+            const newQuote = data[0];
+
+            history.pushState(null, null, qod_vars.home_url + '/' + newQuote.slug);
 
             $('#entryContent').html(newQuote.excerpt.rendered);
             $('#entryMeta').html("— " + newQuote.title.rendered);
@@ -20,53 +28,38 @@
         }).fail(function (error) {
             console.log("an error occurred", error);
         });
+        $(window).on('popstate', function () {
+            window.location.replace(lastPage);
+        });
+    });
+
+    // Submit Form 
+
+    $('#quoteSubmissionForm').on('submit', function (event) {
+        event.preventDefault();
+
+        const formData = {
+            title: $('#quoteAuthor').val(),
+            content: $('#quote').val(),
+            _qod_quote_source_url: $('#quote-location').val(), 
+            _qod_quote_source: $('quote-url').val()
+        };
+        console.log(formData);
+
+        $.ajax({
+            method: 'post',
+            url: `${qod_vars.rest_url}wp/v2/posts/`,
+            data: formData,
+            beforeSend: function (xhr) {
+                xhr.setRequestHeader('X-WP-Nonce', qod_vars.wpapi_nonce);
+            },
+        }).done(function (response) {
+            console.log(response);
+        }).fail(function () {
+            alert('There is a problem! Please try again or contact your local administrator.');
+        })
     });
 })(jQuery);
 
-// Submit Form 
-
-$('#quoteSubmissionForm').on('submit', function (event) {
-    event.preventDefault();
-
-    const formData = {
-        title: $('#quote-author').val(),
-        content: $('#quote').val(),
-        _qod_quote_source_url: $('#quote-location').val(),
-        _qod_quote_source: $('quote-url').val()
-    }
-
-    $.ajax({
-        method: 'POST',
-        url: qod_vars.rest_url + '/wp/v2/posts',
-        data: formData,
-        success: function (formData) {
-           alert('Submission was successful.');
-            console.log(formData);
-        },
-        error: function(formData) {
-           alert('An error occurred.');
-            console.log(formData);
-        }
-    });
-})(jQuery);
-
-// // this is the id of the form
-// $("#idForm").submit(function(e) {
-
-//     e.preventDefault(); // avoid to execute the actual submit of the form.
-
-//     var form = $(this);
-//     var url = form.attr('action');
-
-//     $.ajax({
-//            type: "POST",
-//            url: url,
-//            data: form.serialize(), // serializes the form's elements.
-//            success: function(data)
-//            {
-//                alert(data); // show response from the php script.
-//            }
-//          });
 
 
-// });
