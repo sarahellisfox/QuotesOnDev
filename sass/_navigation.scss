@@ -28,7 +28,7 @@ a {
 /* Menus */
 .site-footer {
 	width: 100%; 
-	margin: 4.5rem 0 3rem;
+	margin: 4.5rem 0 3rem 0;
 
 	.menu {
 		width: inherit; 
@@ -57,9 +57,12 @@ a {
 		flex-direction: row; 
 
 		p {
-			width: 50%;
 			padding-left: 1rem;
 		}
+	}
+
+	@include desktop {
+		justify-content: flex-end;
 	}
 }
 

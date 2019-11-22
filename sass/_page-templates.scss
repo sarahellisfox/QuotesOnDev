@@ -11,6 +11,14 @@
 
 /* All Archives Page */
 
+.category {
+	.page-title, article {
+		border-bottom: 1px dotted #fff;
+		padding-bottom: 1.5rem;
+	}
+}
+
+
 .post-archives, .category-archives, .tag-archives {
 	li {
 		display: inline-flex; 

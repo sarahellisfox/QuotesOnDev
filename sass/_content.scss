@@ -9,6 +9,20 @@ body {
 
 .hfeed {
 	padding: 2.5%;
+	max-width: 1080px;
+
+	@include desktop {
+		margin: 0 auto;
+		max-width: 1080px;
+		width: 100%;
+	}
+}
+
+.site-content {
+	@include desktop {
+		width: 650px;
+		margin: 0 auto;
+	}
 }
 
 .type-page, .browse-archives, .page-id-205 {
@@ -16,6 +30,7 @@ body {
 		margin-top: 3em;
 	};
 }
+
 .sticky {
 	display: block;
 }
@@ -44,11 +59,28 @@ body {
 	margin: 0 0 $base__space-unit;
 }
 
+.site-header {
+
+	@include desktop { 
+		text-align: center;
+		
+
+	}
+
 .logo {
 	background-image: url(../../assets/qod-logo.svg);
 	background-size: 300px; 
 	height: 50px; 
 	background-repeat: no-repeat;
+
+	@include desktop {
+		background-size: 700px;
+		width: 700px;
+		height: 110px;
+		margin-left: auto; 
+		margin-right: auto;
+	}
+}
 }
 
 .post {
@@ -57,4 +89,33 @@ body {
 
 .source, .entry-title {
 	display: inline;
+}
+
+
+.site-content {
+	@include desktop {
+
+		display: block;
+
+		&:before, &:after {
+			position: absolute;
+			color: #0c0;
+			font-family: 'Font Awesome 5 Free';
+			font-weight: 900;
+			font-size: 7.5em;
+			line-height: 1;	
+		}
+
+		&:before {
+			content: "\f10d";
+			left: 22%;
+			top: 28%;
+		}
+
+		&:after {
+			content: "\f10e";
+			right: 22%;
+			top: 28%;
+		}
+	}
 }

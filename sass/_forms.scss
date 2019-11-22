@@ -26,6 +26,18 @@ input[type="submit"] {
 	}
 }
 
+/* Front Page */ 
+
+.nq-btn-wrapper {
+	@include desktop {
+		width: 100%; 
+		display: flex; 
+		justify-content: center;
+		text-align: center;
+
+	}
+}
+
 /* Submit Page */ 
 .page-id-205 {
 	.submit-button {

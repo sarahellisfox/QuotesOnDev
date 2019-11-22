@@ -31,6 +31,30 @@ h1 {
 		}
 }
 
+// Achive 
+
+//Catagory 
+
+.category {
+	h2 {
+		font-size: 1.25rem;
+		font-weight: lighter;
+	}
+
+	@include tablet {
+		.entry-content {
+			font-size: 0.8em;
+		}
+
+	}
+
+	@include desktop {
+		.entry-content {
+			font-size: 1.25em;
+		}
+	}	
+}
+
 /* Copy */
 
 p {
