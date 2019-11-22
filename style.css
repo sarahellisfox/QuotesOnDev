@@ -722,25 +722,6 @@ body {
 .source, .entry-title {
   display: inline; }
 
-@media (min-width: 1080px) {
-  .site-content {
-    display: block; }
-    .site-content:before, .site-content:after {
-      position: absolute;
-      color: #0c0;
-      font-family: 'Font Awesome 5 Free';
-      font-weight: 900;
-      font-size: 7.5em;
-      line-height: 1; }
-    .site-content:before {
-      content: "\f10d";
-      left: 15%;
-      top: 35%; }
-    .site-content:after {
-      content: "\f10e";
-      right: 15%;
-      top: 35%; } }
-
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -761,6 +742,26 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+/* Front Page */
+@media (min-width: 1080px) {
+  .site-content {
+    display: block; }
+    .site-content:before, .site-content:after {
+      position: absolute;
+      color: #0c0;
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      font-size: 7.5em;
+      line-height: 1; }
+    .site-content:before {
+      content: "\f10d";
+      left: 15%;
+      top: 35%; }
+    .site-content:after {
+      content: "\f10e";
+      right: 15%;
+      top: 35%; } }
+
 /* About Page */
 @media (min-width: 620px) {
   entry-header {

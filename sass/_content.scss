@@ -95,32 +95,3 @@ body {
 .source, .entry-title {
 	display: inline;
 }
-
-
-.site-content {
-	@include desktop {
-
-		display: block;
-
-		&:before, &:after {
-			position: absolute;
-			color: #0c0;
-			font-family: 'Font Awesome 5 Free';
-			font-weight: 900;
-			font-size: 7.5em;
-			line-height: 1;	
-		}
-
-		&:before {
-			content: "\f10d";
-			left: 15%;
-			top: 35%;
-		}
-
-		&:after {
-			content: "\f10e";
-			right: 15%;
-			top: 35%;
-		}
-	}
-}
