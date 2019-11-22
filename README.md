@@ -1,5 +1,5 @@
 
-# Quotes on Dev - Custon Wordpress Theme 
+# Quotes on Dev - Custom Wordpress Theme 
 
 ## About This Project
 
@@ -8,7 +8,7 @@ A custom WordPress theme created for the Quotes on Dev website, a site that allo
 The Quotes on Dev Theme used Wordpress as a CMS, as well as PHP, jQuery, CSS and HTML.
 
 ## Personal Learnings 
-This project was such a relief after working on Inhabitent, and I found that I was able to work with Wordpress templates and the structure, and SASS variables and mixins a lot more easily. I also really enjoyed the JavaScript compontant -- it was a challenge, but very rewarding when I finally figured it out. 
+This project was such a relief after working on Inhabitent, and I found that I was able to work with Wordpress templates and utilize the built-in structure, the SASS variables and mixins a lot more easily. I also really enjoyed the JavaScript component -- it was a challenge, but very rewarding when I finally figured it out. 
  
 ## Screenshots
 ![alt text](qod-home.png)
