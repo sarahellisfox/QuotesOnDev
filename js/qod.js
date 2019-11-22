@@ -54,7 +54,14 @@
                 xhr.setRequestHeader('X-WP-Nonce', qod_vars.wpapi_nonce);
             },
         }).done(function (response) {
-            console.log(response);
+            console.log(response)
+
+            $('#quoteSubmissionForm').slideUp(function () {
+                $('#submitSuccessMessage').append(`<p>Thank you for submitting your quote!</p>`)
+                $('#submitSuccessMessage').show();
+
+            });
+
         }).fail(function () {
             alert('There is a problem! Please try again or contact your local administrator.');
         })

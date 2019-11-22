@@ -39,7 +39,7 @@ get_header(); ?>
                      <input id="submitButton" class="submit-button" type="submit" value="Submit Quote">
                   </form>
 
-                  <p class="submit-success-message" style="display:none;"></p>
+                  <p class="submit-success-message" id="submitSuccessMessage"></p>
                </div>
 
             <?php else : ?>
