@@ -1,6 +1,6 @@
 <?php
 /**
- * The main template file.
+ * The main template file for displaying the blog.
  *
  * @package QOD_Starter_Theme
  */
